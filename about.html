@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <title>About myself</title>
+    <style>
+   html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures proper scaling */
+        z-index: -1; /* Sends video to the background */
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /* Semi-transparent black */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end; /* Align navbar items to the right */
+    align-items: center;
+    z-index: 1000; /* Keeps navbar above everything */
+}
+.navbar a:focus, 
+        .navbar a:active {
+            outline: none;
+            box-shadow: none;
+            background: transparent;
+        }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #787773; /* Highlight color on hover */
+}
+img {
+    height: 700px;
+    width: 500px;
+    position: absolute;
+    right: 50px; /* Adjust as needed */
+    top: 40%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.aboutme{
+    color:white;
+    padding-bottom: 550px;
+    margin-right: 350px;
+    width:500px;
+    margin-top:400px;
+}
+.aboutme h1{
+    font-size: 60px;
+    font-style:oblique;
+}
+.aboutme p{
+    font-size: 20px;
+    color: rgba(241, 237, 233, 0.817);
+}
+.aboutme .resume {
+    background-color: rgb(231, 208, 208);
+    width: 210px;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme .resume a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(7, 7, 7);
+    padding: 10px; 
+    display: block; 
+}
+</style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="http://127.0.0.1:3000/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="http://127.0.0.1:3000/project.html">Projects</a>
+        <a href="http://127.0.0.1:3000/contact.html">Contact Me</a>
+    </nav>
+
+
+<div class="video-container">
+    <video autoplay muted loop>
+        <source src="images/f7e770a0ea688d00489f7cfa50c77df2.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <img src="images/Adobe Express - file.png"/>
+
+    <div class="aboutme">
+        <h1>About  Me</h1>
+        <p>I'm Bulbul Agarwalla from Assam, a first year BTech student at Newton School of Technology.🎓</p>
+
+        <p>Beyond coding, I have a deep curiosity for Psychology, which helps me understand user behavior and design intuitive digital experiences. I also have a passion for drawing, which fuels my creativity and attention to detail in both design and development.</p>
+            
+        <p>I’m always open to exciting opportunities, collaborations, and challenges that push me to grow as a developer. 🚀</p>
+
+        <div class="resume"><a href="https://drive.google.com/file/d/1WWiDN4iVUdAPT9dVokRhNkVYvTkTfMBt/view">Checkout Resume</a></div>
+    </div>
+</div>
+</body>
